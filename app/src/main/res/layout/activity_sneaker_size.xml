@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@drawable/sneakerbg">
+
+    <TextView
+        android:id="@+id/label_foot_length"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your foot length (in centimeters):"
+        android:textSize="20sp"
+        android:layout_marginBottom="16dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/foot_length_edit_text"
+        android:layout_width="376dp"
+        android:layout_height="95dp"
+        android:layout_below="@id/label_foot_length"
+        android:hint="Foot length in cm"
+        android:inputType="numberDecimal"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/suggest_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Suggest Sneaker Size"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/foot_length_edit_text"/>
+
+    <TextView
+        android:id="@+id/result_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_marginTop="200dp"
+        android:layout_below="@+id/suggest_button"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="140dp"
+        android:layout_height="150dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="-45dp"
+        app:srcCompat="@drawable/sneaker" />
+
+</RelativeLayout>
+
